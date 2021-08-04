@@ -1,0 +1,135 @@
+body{
+    display: grid;
+    justify-content: center;
+    font-family: Roboto;
+    font-size: 1.5rem;
+}
+.calculator{
+    display: grid;
+    width: 25rem ;
+    grid-template-columns:5rem 5rem 5rem 5rem ;
+    grid-template-rows: 4rem  4rem 4rem 4rem 4rem 4rem 4rem;
+    grid-template-areas: 
+    "screen screen screen screen "
+    "screen screen screen screen "
+    "clear clear delete delete"
+    "seven eight nine divide"
+    "four five six multiply"
+    "one two three subtract"
+    "decimal-point zero equal add";
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    justify-content: center;
+    background-color: gray;
+    border: 2px solid rgba(0, 0,0, 1);
+    border-radius: 25px;
+    padding: 1.5rem 0;
+}
+
+.key{
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(0, 0,0, 1);
+    border-radius: 0.5rem;
+}
+
+.screen{
+    background-color: white;
+    grid-area: screen;
+    border: 2px solid rgba(0, 0,0, 1);
+    border-radius: 0.5rem;
+    display: grid;
+    justify-content: end;
+    align-items : end;
+    padding: 1.5rem 1.5rem;
+}
+
+.input{
+    display: grid;
+    justify-content: end;
+    align-items : end;
+    font-size: 2.5rem;
+}
+
+
+.expression{
+    display: grid;
+    justify-content: end;
+    align-items : end;
+    font-size: 1.5rem;
+}
+
+#zero{
+    grid-area: zero;
+}
+
+#one{
+    grid-area: one;
+}
+
+#two{
+    grid-area: two;
+}
+
+#three{
+    grid-area: three;
+}
+
+#four{
+    grid-area: four;
+}
+
+#five{
+    grid-area: five;
+}
+
+#six{
+    grid-area: six;
+}
+
+#seven{
+    grid-area: seven;
+}
+
+#eight{
+    grid-area: eight;
+}
+
+#nine{
+    grid-area: nine;
+}
+
+#add{
+    grid-area: add;
+}
+
+#subtract{
+    grid-area: subtract;
+}
+
+#multiply{
+    grid-area: multiply;
+}
+
+#divide{
+    grid-area: divide;
+}
+
+#equal{
+    grid-area: equal;
+}
+
+#decimal-point{
+    grid-area: decimal-point;
+}
+
+#clear{
+    grid-area: clear;
+}
+
+#delete{
+    grid-area: delete;
+}
+
